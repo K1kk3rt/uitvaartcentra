@@ -1,0 +1,16 @@
+{
+    "host": "ftp.k1kk3rt.nl",
+    "username": "k1kk3rtnl",
+    "password": "LAWuyiiELt",
+    "remotePath": "/Subdomains/uitvaartcentra/",
+    "protocol": "ftp",
+    "port": 0,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}
