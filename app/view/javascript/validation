@@ -1,0 +1,40 @@
+function validateName(){
+    var name = document.getElementById("name");
+
+    //name does not contain letters, and whitespace
+    if (! /^[a-zA-Z]+$/.test(name.value)) {
+        msg = "Name is invalid";
+        document.getElementById("msg").innerHTML = msg;
+    }
+    
+}
+
+function validateEmail(email){
+    var email = document.getElementById("email");
+
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))
+    {
+        msg = "Email is invalid";
+        document.getElementById("msg").innerHTML = msg;
+    }
+}
+
+function validatePassword(password){
+    var password = document.getElementById("password");
+
+    //passward must be longer than 7 characters
+    if (password.value.length < 7){
+        msg = "Password must be longer than 7 characters";
+        document.getElementById("msg").innerHTML = msg;
+    }
+}
+
+function checkSecondPassword(password, passwordCopy){
+    var password = document.getElementById("password");
+    var passwordCopy = document.getElementById("password_copy");
+
+    if (!password.value === passwordCopy.value){
+        msg = "Second password does not match first password";
+        document.getElementById("msg").innerHTML = msg;
+    }
+}
