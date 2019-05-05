@@ -15,10 +15,9 @@ function displayEditModal(id) {
     $('.huisnummer', modal).val(huisnummer);
     $('.plaats', modal).val(plaats);
     if (bezorging == "ja") {
-        $("#ja").prop("checked", true);
-    }
-    else {
-        $("#nee").prop("checked", true);
+        $("#jaEdit").prop("checked", true);
+    } else {
+        $("#neeEdit").prop("checked", true);
     }
     $('.opmerking', modal).val(opmerking);
 
@@ -29,16 +28,4 @@ function displayEditModal(id) {
     $('#editModal').modal('toggle');
 
     return false;
-}
-
-function setBezorgingRadio(id) {
-
-    var element = id.id;
-
-    if (element == "ja") {
-        $("#ja").prop("checked", true);
-    }
-    else {
-        $("#nee").prop("checked", true);
-    }
 }
