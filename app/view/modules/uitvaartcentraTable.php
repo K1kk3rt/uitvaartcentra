@@ -102,13 +102,13 @@ class uitvaartcentraTable
                             <input type="text" class="form-control plaats" id="plaatsInput" name="plaats" required="true">
         
                             <label class="mt-3" for="bezorgingInput">bezorging</label>
-                            <div class="custom-control custom-radio" id="bezorgingInputJa" onclick="setBezorgingRadio(ja)">
-                                <input type="radio" id="ja" name="bezorging" class="custom-control-input bezorging" name="bezorging" value="ja">
-                                <label class="custom-control-label" for="customRadio1">Ja</label>
+                            <div class="custom-control custom-radio" id="bezorgingInput">
+                                <input type="radio" id="jaEdit" name="bezorging" class="custom-control-input bezorging" name="bezorging" value="ja">
+                                <label class="custom-control-label" for="jaEdit">Ja</label>
                             </div>
-                            <div class="custom-control custom-radio" id="bezorgingInputNee" onclick="setBezorgingRadio(nee)">
-                                <input type="radio" id="nee" name="bezorging" class="custom-control-input bezorging" name="bezorging" value="nee">
-                                <label class="custom-control-label" for="customRadio2">Nee</label>
+                            <div class="custom-control custom-radio" id="bezorgingInput">
+                                <input type="radio" id="neeEdit" name="bezorging" class="custom-control-input bezorging" name="bezorging" value="nee">
+                                <label class="custom-control-label" for="neeEdit">Nee</label>
                             </div>
                             <label class="mt-3" for="opmerkingInput">opmerking</label>
                             <textarea type="text" class="form-control opmerking" id="opmerkingInput" style="height: 70px;" name="opmerking"></textarea>

@@ -19,6 +19,8 @@ class uitvaartcentraController
     {
         $num = 0;
 
+        debug::LogVarToFile($can_deliver);
+
         if ($can_deliver == "ja") {
             $num = 1;
         }
